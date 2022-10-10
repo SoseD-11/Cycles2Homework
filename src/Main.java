@@ -29,7 +29,7 @@ public class Main {
         float increasePerYear = fertilityYear - mortalityYear;
         int year = 0;
         while(year < 10){
-        populationY = populationY + Math.round(populationY * increasePerYear);
+        populationY += Math.round(populationY * increasePerYear);
         year++;
         System.out.println("Год " + year + " численность населения составляет " + populationY);
         }
@@ -46,7 +46,7 @@ public class Main {
         int first = 15_000;
         int monthZ = 0;
         while(first < 12_000_000){
-            first = first + first * 7/100;
+            first += first * 7/100;
             monthZ++;
             if(monthZ % 6 == 0){
                 System.out.println("Месяц " + monthZ + " сумма накоплений равна " + first + " рублей");
