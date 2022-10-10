@@ -77,7 +77,7 @@ public class Main {
         int year1 = nowADays - 200;
         int future = nowADays + 100;
         for (int u = year1; u <= future; u++){
-            if (i % 79 ==0){
+            if (u % 79 ==0){
                 System.out.println(u);
             }
         }
